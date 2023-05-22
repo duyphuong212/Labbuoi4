@@ -1,0 +1,68 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package lab4th;
+
+/**
+ *
+ * @author ADMIN
+ */
+public class Giaodichdat {
+
+    static Object get(int i) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+   
+     private String loaiDat;
+ 
+    public Giaodichdat() {
+        super();
+    }
+ 
+    public Giaodichdat(String loaiDat) {
+        super();
+        this.loaiDat = loaiDat;
+    }
+ 
+    public String getLoaiDat() {
+        return loaiDat;
+    }
+ 
+    public void setLoaiDat(String loaiDat) {
+        this.loaiDat = loaiDat;
+    }
+     
+    public void nhap() {
+        super.nhap();
+        System.out.print("Nhập loại đất (A/B/C): ");
+        loaiDat = scanner.nextLine();
+    }
+ 
+    @Override
+    public String toString() {
+        return super.toString() + ", loại đất: " + this.loaiDat;
+    }
+
+    void add(Giaodichdat Giaodichdat) {
+        throw new UnsupportedOperationException("Not supported yet."); 
+    }
+
+    double getDongia() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    double getDienTich() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    double getDonGia() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    Object getNgayGiaoDich() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    
+}
