@@ -1,0 +1,87 @@
+# Labbuoi4
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package lab4th;
+ import java.util.Scanner;
+/**
+ *
+ * @author ADMIN
+ */
+public class Giaodich {
+
+    void nhap() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+   
+public class GD {
+      private String maGiaoDich;
+      private String ngayGiaoDich;
+    private long donGia;
+    private float dienTich;
+    Scanner scanner = new Scanner(System.in);
+     
+    public GD() {
+        super();
+    }
+ 
+    public GD(String maGiaoDich, String ngayGiaoDich, long donGia, float dienTich) {
+        super();
+        this.maGiaoDich = maGiaoDich;
+        this.ngayGiaoDich = ngayGiaoDich;
+        this.donGia = donGia;
+        this.dienTich = dienTich;
+    }
+ 
+    public String getMaGiaoDich() {
+        return maGiaoDich;
+    }
+ 
+    public void setMaGiaoDich(String maGiaoDich) {
+        this.maGiaoDich = maGiaoDich;
+    }
+ 
+    public String getNgayGiaoDich() {
+        return ngayGiaoDich;
+    }
+ 
+    public void setNgayGiaoDich(String ngayGiaoDich) {
+        this.ngayGiaoDich = ngayGiaoDich;
+    }
+ 
+    public long getDonGia() {
+        return donGia;
+    }
+ 
+    public void setDonGia(long donGia) {
+        this.donGia = donGia;
+    }
+ 
+    public float getDienTich() {
+        return dienTich;
+    }
+ 
+    public void setDienTich(float dienTich) {
+        this.dienTich = dienTich;
+    }
+     
+    public void nhap() {
+        System.out.print("Nhập mã giao dịch: ");
+        maGiaoDich = scanner.nextLine();
+        System.out.print("Nhập ngày giao dịch (ngày/tháng/năm): ");
+        ngayGiaoDich = scanner.nextLine();
+        System.out.print("Nhập đơn giá: ");
+        donGia = Long.parseLong(scanner.nextLine());
+        System.out.print("Nhập diện tích: ");
+        dienTich = Float.parseFloat(scanner.nextLine());
+    }
+     
+    @Override
+    public String toString() {
+        return "Mã giao dịch: " + this.maGiaoDich + ", ngày giao dịch: " + this.ngayGiaoDich + 
+            ", đơn giá: " + this.donGia + ", diện tích: " + this.dienTich;
+    }
+    
+}
+}
